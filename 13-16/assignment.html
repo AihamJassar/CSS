@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=width-device, initial-scale=1">
+    <style>
+      .parent .child .title{
+        color: red;
+      }
+      .parent .title{
+        color: blue;
+      }
+      div p,
+      .title{
+        color: green;
+      }
+      .a2{
+        background-color: red;
+        margin: 10px;
+        max-width: 400px;
+        width: fit-content;
+        max-height: 40px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>assignment 1</h2>
+    <div class="parent">
+      <div class="child">This Is Child <span class="title">Title</span></div>
+      <span class="title">Child Title</span>
+      <p>Paragraph Content</p>
+    </div>
+    <div class="title">Section Title</div>
+    <hr>
+    <h2>assignment 2</h2>
+    <div class="a2">Title One</div>
+    <div class="a2">Title Two with more words</div>
+    <div class="a2">Title three with many many many words</div>
+    <div class="a2">Title three with many many many words Title three with many many many words Title three with many many many words Title three with many many many words</div>
+    
+  </body>
+</html>
