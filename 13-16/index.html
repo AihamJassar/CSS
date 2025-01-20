@@ -27,7 +27,18 @@
         margin: 10px;
         background-color: #EEE;
       }
-      
+      p{
+        color: red;
+      }
+      div p{
+        color: blue;
+      }
+      .special{
+        color: green;
+      }
+      div .special{
+        color: yellow;
+      }
     </style>
   </head>
   <body>
@@ -35,5 +46,12 @@
     <div class="two">Two</div>
     <div class="three">Three</div>
     <div class="four">Four</div>
+    <hr>
+    <div>
+      <p>paragraph inside div</p>
+      <p class="special">paragraph inside div with class</p>
+    </div>
+    <p>paragraph outside div</p>
+    <p class="special">paragraph outside div with class</div>
   </body>
 </html>
