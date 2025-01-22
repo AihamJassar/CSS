@@ -12,7 +12,7 @@
        body{
          font-family: "Smooch Sans";
        }
-       div{
+       .box-1{
          background-color: rgb(128 128 128 /50%);
          text-align: center;
          padding: 20px;
@@ -20,17 +20,28 @@
          margin: 10px;
          border: 10px solid black;
        }
-       div p{
+       .box-1 p{
          border: 5px solid;
          border-color: inherit;
+         font-size: larger;
          padding: inherit;
+       }
+       .box-2{
+         font-size: 2vw;
+       }
+       span{
+         font-size: 2em;
        }
     </style>
   </head>
   <body>
-    <div>
+    <div class="box-1">
       <h3>Heading</h3>
       <p>This is a paragraph</p>
+    </div>
+    <div class="box-2">
+      This is Div
+      <span>Test</span>
     </div>
   </body>
 </html>
