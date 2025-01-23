@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=width-device, initial-scale=1.0">
+    <title>assignment</title>
+    <style>
+      .parent{
+        background-color: rgb(128 128 128 /20%);
+        width: 800px;
+        padding: 0px;
+      }
+      .parent div{
+        margin-top: 15px;  
+      }
+      .parent .child-1{
+         background-color: rgb(128 128 128 /50%);
+         text-align: center;
+         width: calc(100% - 30px);
+         margin-left: 15px
+      }
+      .parent .child-2 div{
+         background-color: rgb(128 128 128 /50%);
+         text-align: center;
+         width: calc((100% - 60px) / 3);
+         float: left;
+         margin-left: 15px;
+      }
+      .parent .child-3 div{
+         background-color: rgb(128 128 128 /50%);
+         text-align: center;
+         width: calc((100% - 45px)/2);
+         margin-left: 15px;
+         float: left;
+      }
+      .parent .child-4 div{
+         background-color: rgb(128 128 128 /50%);
+         text-align: center;
+         width: calc((100% - 75px)/4);
+         margin-left: 15px;
+         float: left;
+      }
+      .clear{
+        clear: both;
+      }
+      .normal,
+      .one,
+      .two {
+        margin: 20px auto;
+        width: 300px;
+        font-weight: bold;
+        font-size: 1rem;
+        padding: 20px;
+        background-color: rgb(128 128 128); /* Get The Background From Image */
+        color: black;
+      }
+      .one {
+         background-color: rgb(128 128 128 /10%);
+      }
+      .two {
+         opacity: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>assignment 1</h2>
+    <div class="parent">
+      <div class="child-1">Full width</div>
+      <div class="child-2">
+         <div>1-1</div>
+         <div>1-2</div>
+         <div>1-3</div>
+         <p class="clear">
+      </div>
+      <div class="child-3">
+      <div>2-1</div>
+      <div>2-2</div>
+      <p class="clear"></p>
+      </div>
+      <div class="child-4">
+         <div>4-1</div>
+         <div>4-2</div>
+         <div>4-3</div>
+         <div>4-4</div>
+         <p class="clear"></p>
+      </div>
+    </div>
+    <hr>
+    <h2>assignment 2</h2>
+    <div class="normal">Normal</div>
+    <div class="one">One</div>
+    <div class="two">Two</div>
+  </body>
+</html>
