@@ -32,10 +32,24 @@
          padding-left: 0px;
          margin: 0;
       }
+       table{
+         border: 2px solid black;
+         width: 100%;
+         border-spacing: 1px;
+        }
+        table td{
+          padding: 1px;
+          background-color: rgb(128 128 128 /40%);
+        }
+        thead{
+          background-color: rgb(0 255 0 / 50%);
+          font-weight: bold;
+          text-align: center;
+          text-transform: capitalize;
+          color: white;
     </style>
   </head>
   <body>
-    <title>title</title>
     <ul>
       <li>HTML</li>
       <li>CSS</li>
@@ -47,5 +61,44 @@
           </ul>
        </li>
     </ul>
+    <hr>
+    <table>
+      <caption>This is caption</caption>
+      <thead>
+        <tr>
+          <td>name</td>
+          <td>job</td>
+          <td>salary</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Aiham</td>
+          <td>Engineer</td>
+          <td>2500$</td>
+        </tr>
+        <tr>
+          <td>Ahmed</td>
+          <td>Doctor</td>
+          <td>1200$</td>
+        </tr>
+        <tr>
+          <td>Ali</td>
+          <td>teacher</td>
+          <td>300$</td>
+        </tr>
+        <tr>
+          <td>Osama</td>
+          <td>nurse</td>
+          <td>250$</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td>4250$</td>
+        </tr>
+     </tfoot>
+    </table>
   </body>
 </html>
