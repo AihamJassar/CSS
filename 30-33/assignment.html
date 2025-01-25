@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
-   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=width-device, initial-scale=1.0">
     <title>assignment</title>
     <style>
+      .parent-ass-1{
+      				position: relative;
+      				top:0;
+      }
       .green{
          background-color: green;
          width: 100px;
@@ -41,43 +43,121 @@
          top: 80px;
          left: 40px;
        }
+      .parent-ass-2{
+      		  position: relative;
+      		  top: 250px;
+      }
        .ass-2{
           width: 400px;
-          top: 350px;
           margin-left: auto;
           margin-right: auto;
           background-color: rgb(128 128 128 /30%);
-          position: absolute;
-          left: 150px;
           border-width: 2px;
           border-color: red blue;
           border-style: solid;
           padding: 10px;
           line-height: 1.6;
-          
+       		  position: relative;
+        }
+        .top-left,
+        .bottom-left,
+        .top-right,
+        .bottom-right{
+        		  background-color: rgb(0 0 255);
+        		  display: inline-block;
+        	  	width: 20px;
+           height: 20px;
+        		  text-align: center;
+           color: white;
+        		   position: absolute;
         }
         .top-left{
-          background-color: rgb(0 0 255);
-          position: absolute;
+        		 border-right: 1px solid red;
           top: -10px;
           left: -10px;
-          display: inline-block;
-          width: 20px;
-          height: 20px;
-          text-align: center;
-          color: white;
-          border-right: 1px solid red;
-          z-index: 10;
+        }
+        .bottom-left{
+        		  border-right: 1px solid red;
+        		  bottom: -10px;
+           left: -10px;
+        }
+        .top-right{
+        		  border-left: 1px solid red;
+        		  top: -10px;
+        		  right: -10px;
+        }
+        .bottom-right{
+        		  border-left: 1px solid red;
+        		  bottom: -10px;
+        		  right: -10px;
+        }
+        .parent-ass-3{
+        		 position: relative;
+        		 top: 300px;
+        }
+        
+        .ass-3-html,.ass-3-css,.ass-3-js{
+        		  width: 400px;
+        		  margin: 10px auto;
+        	  	background-color: rgb(128 128 128 /20%);
+        		  list-style: none;
+        		  padding: 2px;
+        				 
+        }
+        ol li,ul li ul li{
+        		background-color: white;
+        		margin: 5px;
+        				
+        }
+        .ass-3-js{
+        				list-style-position: inside;
+        }
+        .ass-3-js ul{
+        				padding-left: 0;
+        }
+        .parent-ass-4{
+        				position: relative;
+        				top: 350px;
+        }
+        table{
+        				width: 700px;
+        				margin:10px auto;
+        }
+        thead tr td{
+        				background-color: rgb(0 0 0);
+        				color: white;
+        				text-align: center;
+        				margin-bottom: 20px;
+        				border: 1px;
+        }
+        tbody tr td{
+        				background-color: rgb(128 128 128 /50%);
+        				text-align: center;
+        				padding: 0px;
+        }
+        .view{
+        				background-color: blue;
+        				color: white;
+        }
+        .delete{
+        				background-color: red;
+        				color: white;
+        				margin-left: 4px;
         }
     </style>
    </head>
    <body>
-      <h2>assignment 1</h2>
-      <div class="green"></div>
-      <div class="red"></div>
-      <div class="blue"></div>
-      <div class="black"></div>
-      <h2 style="position: absolute; top:250px">assignment 2</h2>
+   				
+   				<div class="parent-ass-1">
+   		  <h2>assignment 1</h2>
+   		  <div class="green"></div>
+   		  <div class="red"></div>
+   		  <div class="blue"></div> 
+   		  <div class="black"></div>
+   				</div>
+   				
+   		<div class="parent-ass-2">
+   				<h2>assignment 2</h2>
       <div class="ass-2">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, sed. Ea ipsum
         similique quasi rem, fugiat voluptatibus reiciendis nam debitis earum quo veniam
@@ -87,5 +167,92 @@
         <span class="top-right">3</span>
         <span class="bottom-right">4</span>
       </div>
+   		</div>
+   		<div class="parent-ass-3">
+   							<h2>assignment 3</h2>
+   				 <ul class="parent-ul">
+  <li class="ass-3-html">
+    HTML
+    <ol>
+      <li>Slim</li>
+      <li>Pugjs</li>
+      <li>HAML</li>
+    </ol>
+  </li>
+  <li class="ass-3-css">
+    CSS
+    <ol>
+      <li>SASS</li>
+      <li>LESS</li>
+      <li>PostCSS</li>
+    </ol>
+  </li>
+  <li class="ass-3-js">
+    JavaScript
+    <ul>
+      <li>Vuejs</li>
+      <li>Sveltejs</li>
+    </ul>
+  </li>
+</ul>
+   		</div>
+   				<div class="parent-ass-4">
+   								<h2>assignment 4</h2>
+   								<table>
+   												<caption>Developers Rating</caption>
+   												<thead>
+   																<tr>
+   																				<td>Avtar</td>
+   																				<td>Group</td>
+   																				<td>Name</td>
+   																				<td>Points</td>
+   																				<td>Contorl</td>
+   																</tr>
+   												</thead>
+   												<tbody>
+   																<tr>
+   																				<td><img src="image.jpg" alt="image" width="30px" height="30px"></td>
+   																				<td>Group</td>
+   																				<td>Name</td>
+   																				<td>Points</td>
+   																				<td><button class="view">view</button><button class="delete">delete</button></td>
+   																</tr>
+   																<tr>
+   																				<td><img src="image.jpg" alt="image" width="30px" height="30px"></td>
+   																				<td rowspan="2">Group</td>
+   																				<td>Name</td>
+   																				<td>Points</td>
+   																				<td><button class="view">view</button><button class="delete">delete</button></td>
+   																</tr>
+   																<tr>
+   																				<td><img src="image.jpg" alt="image" width="30px" height="30px"></td>
+   																				<td>Name</td>
+   																				<td>Points</td>
+   																				<td><button class="view">view</button><button class="delete">delete</button></td>
+   																</tr>
+   																<tr>
+   																				<td><img src="image.jpg" alt="image" width="30px" height="30px"></td>
+   																				<td rowspan="2">Group</td>
+   																				<td>Name</td>
+   																				<td>Points</td>
+   																				<td><button class="view">view</button><button class="delete">delete</button></td>
+   																</tr>
+   																<tr>
+   																				<td><img src="image.jpg" alt="image" width="30px" height="30px"></td>
+   																				<td>Name</td>
+   																				<td>Points</td>
+   																				<td><button class="view">view</button><button class="delete">delete</button></td>
+   																</tr>
+   																<tr>
+   																				<td><img src="image.jpg" alt="image" width="30px" height="30px"></td>
+   																				<td>Group</td>
+   																				<td>Name</td>
+   																				<td>Points</td>
+   																				<td><button class="view">view</button><button class="delete">delete</button></td>
+   																</tr>
+   												</tbody>
+   												<tfoot></tfoot>
+   								</table>
+   				</div>
    </body>
 </html>
