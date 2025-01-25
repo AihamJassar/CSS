@@ -50,34 +50,25 @@
        left: 150px;
        line-height: 1.6;
      }
+     body{
+      counter-reset: div-counter;
+     }
+     div{
+       counter-increment: div-couner;
+      }
+     div::after{
+       content: attr(title);
+     }
     </style>
   </head>
   <body>
-     <a href="#">Google</a>
-     <button>click me</button>
-     <input type="text">
-     <button>Click Me</button>
-     <p>aiham Mohammed</p>
-     <p class="par">    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eligendi earum deleniti quaerat, tenetur id dignissimos ipsum ea voluptate facilis, soluta quam cumque maiores praesentium animi exercitationem consequuntur natus est.
-</p>
 
-     <div class="parent">
-       <div class="user">O</div>
-       <div class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eligendi earum deleniti quaerat, tenetur id 
-            dignissimos ipsum ea voluptate facilis, soluta quam cumque maiores praesentium  animi exercitationem consequuntur natus est.        
-        </div>
-     </div>
-     <div class="parent">
-       <div class="user">A</div>
-       <div class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eligendi earum deleniti quaerat, tenetur id 
-            dignissimos ipsum ea voluptate facilis, soluta quam cumque maiores praesentium  animi exercitationem consequuntur natus est.        
-        </div>
-     </div>
-     <div class="parent">
-       <div class="user">S</div>
-       <div class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eligendi earum deleniti quaerat, tenetur id 
-            dignissimos ipsum ea voluptate facilis, soluta quam cumque maiores praesentium  animi exercitationem consequuntur natus est.        
-        </div>
-     </div>
+        <div title="oiaiou">div =&gt;</div>
+        <div>div =&gt;</div>
+        <div>div =&gt;</div>
+        <div>div =&gt;</div>
+        <div>div =&gt;</div>
+        <div>div =&gt;</div>
+
   </body>
 </html>
