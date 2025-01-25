@@ -8,6 +8,18 @@
       input:focus{
          background-color: blue;
       }
+      p::first-letter{
+       font-size: 30px;
+       font-weight: bold;
+       text-transform: uppercase;
+     }
+     .par::first-line{
+       color: red;
+     }
+     ::selection{
+       background-color: black;
+       color: yellow;
+     }
     </style>
   </head>
   <body>
@@ -16,5 +28,7 @@
      <input type="text">
      <button>Click Me</button>
      <p>aiham Mohammed</p>
+     <p class="par">    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eligendi earum deleniti quaerat, tenetur id dignissimos ipsum ea voluptate facilis, soluta quam cumque maiores praesentium animi exercitationem consequuntur natus est.
+</p>
   </body>
 </html>
