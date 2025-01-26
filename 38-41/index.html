@@ -6,17 +6,31 @@
    <meta name="viewport" content="width=width-device, initial-scale=1.0">
     <title>assignment</title>
     <style>
+       *{
+          -webkit-box-sizing: border-box;
+        }
       .parent{
-        width: 100px;
-        height: 100px;
-        margin: 40px auto;
+        width: 600px;
+        margin: 20px;
+        padding: 20px;
         background-color: rgb(128 128 128 /80%);
-        border-radius: 50%;
-        box-shadow: 5px 5px 0px 0px black, 10px 10px 0px 0px blue;
+        overflow: hidden;
+      }
+      .one{
+        width: 300px;
+        background-color: rgb(128 0 0 /20%);
+        float: left;
+        padding: 50px;
+        border: 10px solid red;
+        box-sizing: border-box;
+        height: 20px;
       }
     </style>
   </head>
   <body>
-    <div class="parent"></<div>
+    <div class="parent">
+      <div class="one">One</div>
+      <div class="one">One</div>
+    </<div>
   </body>
 <html>
