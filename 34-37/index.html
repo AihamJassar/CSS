@@ -50,25 +50,20 @@
        left: 150px;
        line-height: 1.6;
      }
-     body{
-      counter-reset: div-counter;
-     }
      div{
-       counter-increment: div-couner;
-      }
-     div::after{
-       content: attr(title);
+     				counter-increment: div-counter;
      }
+  				 div::after,h2::after{
+  				 				content: counter(div-counter);
+  				 }
     </style>
   </head>
   <body>
-
-        <div title="oiaiou">div =&gt;</div>
-        <div>div =&gt;</div>
-        <div>div =&gt;</div>
-        <div>div =&gt;</div>
-        <div>div =&gt;</div>
-        <div>div =&gt;</div>
-
+  				<div>div </div>
+  				<div>div </div>
+  				<div>div </div>
+  				<div>div </div>
+  				<div>div </div>
+  				<h2>c = </h2>
   </body>
 </html>
