@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=width-device, initial-scale=1.0">
     <title>title</title>
     <style>
-      div{
+      .div-1{
         width:200px;
         height: 200px;
         background-color: gray !important;
@@ -16,13 +16,51 @@
         transition: width, margin 5s 1s ease-in;
         
       }
-      div:hover{
+      .div-1:hover{
         width: 600px;
         margin: 150px 150px;
+      }
+      .parent{
+         width: 400px;
+         height: 200px;
+         margin: auto;
+         overflow: hidden;
+         background-color: #eee;
+         padding: 10px;
+       }
+      .one, .two{
+         width: 50%;
+         height: 100%;
+         float: left;
+      }
+      .one{
+        background-color: gray;
+      }
+      .up{
+         background-color: red;
+         height: 80px;
+         color: white;
+         margin-bottom: 40px;
+      }
+      .down{
+        background-color: green;
+         height: 80px;
+         color: white;
+         margin-top: 20px;
       }
     </style>
   </head>
   <body>
-    <div style="background-color: red;">One</div>
+    <div class="div-1" style="background-color: red;">One</div>
+    <hr>
+    <div class="parent">
+       <div class="one"></div>
+       <div class="two">
+          <div>
+            <div class="up"></div>
+          </div>
+          <div class="down"></div>
+       </div>
+    </div>
   </body>
 </html>
