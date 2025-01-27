@@ -48,6 +48,22 @@
          color: white;
          margin-top: 20px;
       }
+      :root{
+        --main-color: green;
+      }
+      .global-1{
+       background-color: var(--main-color, red);
+     }
+      .global-2{
+       background-color: var(--main-color, red);
+     }
+     .local-parent{
+       --main-color: purple;
+       
+     }
+     .local-child{
+       background-color: var(--main-color, black);
+     }
     </style>
   </head>
   <body>
@@ -61,6 +77,12 @@
           </div>
           <div class="down"></div>
        </div>
+    </div>
+    <hr>
+    <div class="global-1">Global-1</div>
+    <div class="global-2">Global-2</div>
+    <div class="local-parent">local-parent
+      <div class="local-child">local-child</div>
     </div>
   </body>
 </html>
