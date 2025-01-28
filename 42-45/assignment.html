@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+				<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+				<title>assignment</title>
+				<style>
+				  *{
+				  				box-sizing: border-box;
+				  }
+				  .ass-1{
+				  				position: relative;
+				  }
+				  .ass-1 .parent{
+				  				width: 400px;
+				  				height: 200px;
+				  				margin: 70px auto;
+				  				padding-top: 30px;
+				  				background-color: rgb(128 128 128 /20%);
+				  				text-align: center;
+				  				transition-duration: 0.5s;
+				  				position: relative;
+				  				top: 0;
+				  }
+				  .ass-1 .child{
+				  				width: 350px;
+				  				height: 50px;
+				  				margin: 20px auto;
+				  				padding-top: 15px;
+				  				background-color: rgb(128 128 128 /20%);
+				  				text-align: center;
+				  				transition-delay: 0.5s;
+				  }
+				  .ass-1 .parent:hover{
+				  				top: 50px;
+				  				.child{
+				  								margin-top: 50px;
+				  				}
+				  }
+				  .ass-2 div{
+				  				width: 400px;
+				  				margin: auto;
+				  				font-size: 20px !important;
+				  				background-color: rgb(128 128 128 /50%) !important;
+				  				border: none !important;
+				  				text-align: center;
+				  				color: transparent !important;
+				  				position: relative;
+				  }
+				  .ass-2 div::before{
+				  				content: "Elzero";
+				  				display: inline-block;
+				  				color: black;
+				  				font-weight: bold;
+				  				position: relative;
+				  				padding-left: 80px;
+				  }
+			  	:root {
+     --mainColor: #009688;
+     --mainPadding: 10px;
+    }
+
+    .ass-3 div {
+    				width: 400px;
+    				margin: 10px;
+    				border: 2px solid var(--mainColor, black);
+    				padding: var(--mainPadding, 10px);
+    				color: var(--mainColor, red);
+    }
+				</style>
+</head>
+<body style="width: 600px;">
+				<div class="ass-1">
+								<h2>assignment 1</h2>
+								<div class="parent">
+								Will Go Up On Hover in Half Seconf
+								<div class="child">Will Go Down On Hover After Half Second</div>
+				</div>
+				</div>
+				<div class="ass-2">
+								<h2>assignment 2</h2>
+								<div style="
+												background-color: red;
+												color: white;
+												padding: 20px;
+												border: 1px solid blue;
+												font-size: 80px;">
+       Hello Div
+   </div>
+				</div>
+				<div class="ass-3">
+								<h2>assignment 3</h2>
+							  	<div>Element</div>
+     <div>Element</div>
+     <div>Element</div>
+				</div>
+</body>
+</html>
