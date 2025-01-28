@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=width-device, initial-scale=1.0">
+    <title>title</title>
+    <style>
+      *{
+         box-sizing: border-box;
+       }
+      .flex{
+        background-color: #eee;
+        width: 600px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        flex-flow: row-reverse nowrap;
+        padding: 20px;
+        margin: 20px auto;
+      }
+      .float{
+        background-color: #eee;
+        width: 600px;
+        overflow: hidden;
+        padding: 20px;
+        margin: 20px auto;
+      }
+      .flex div{
+        background-color: #f00;
+        color: white;
+        width: 25%;
+        padding: 20px;
+        text-align: center;
+      }
+      .float div{
+        background-color: red;
+        color: white;
+        width: 25%;
+        float: left;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Flex</h2>
+    <div class="flex">
+       <div>One</div>
+       <div>Two</div>
+       <div>Three</div>
+       <div>Four</div>
+       <div>Five</div>
+    </div>
+    <hr>
+    <h2>Float</h2>
+    <div class="float">
+       <div>One</div>
+       <div>Two</div>
+       <div>Three</div>
+       <div>Four</div>
+    </div>
+  </body>
+</html>
