@@ -10,28 +10,33 @@
        }
       .flex{
         background-color: #eee;
-        width: 600px;
+        width: 800px;
         display: flex;
-        height: 400px;
         padding: 20px;
         margin: 20px auto;
-        flex-wrap: wrap;
-        align-itmes: flex-start;
-        align-content: space-evenly;
+        
       }
+  				   .flex div{
+        background-color: #f00;
+        color: white;
+        width: 184px;
+        padding: 20px;
+        text-align: center;
+      				margin-left: 6px;
+  				   				flex-grow: 0;
+  				   				flex-shrink: 1;
+      }
+  				  .flex .two{
+  				  				flex-grow: 0;
+  				  				flex-shrink: 3;
+  				  				wid-th: 84px;
+  				  }
       .float{
         background-color: #eee;
         width: 600px;
         overflow: hidden;
         padding: 20px;
         margin: 20px auto;
-      }
-      .flex div{
-        background-color: #f00;
-        color: white;
-        width: calc(98%/3);
-        padding: 20px;
-        text-align: center;
       }
       .float div{
         background-color: red;
@@ -50,14 +55,15 @@
         background-color: blue;
         color: white;
       }
+  				
     </style>
   </head>
   <body>
     <h2>Flex</h2>
     <div class="flex">
-       <div class="one">One</div>
-       <div class="two">Two</div>
-       <div class="three">Three</div>
+       <div class="one" style="order: 1;">One</div>
+       <div class="two" style="order: 4;">Two</div>
+       <div class="three" style="order: 4;">Three</div>
        <div>Four</div>
     </div>
     <hr>
