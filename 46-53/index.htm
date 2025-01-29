@@ -10,16 +10,16 @@
        }
       .flex{
         background-color: #eee;
-        width: 800px;
-        display: flex;
+        width: 600px;
+        display: inline-flex;
         padding: 20px;
         margin: 20px auto;
-        
+        flex-direction: row;
       }
   				   .flex div{
         background-color: #f00;
         color: white;
-        width: 184px;
+        width: 100px;
         padding: 20px;
         text-align: center;
       				margin-left: 6px;
@@ -28,8 +28,9 @@
       }
   				  .flex .two{
   				  				flex-grow: 0;
-  				  				flex-shrink: 3;
-  				  				wid-th: 84px;
+  				  				flex-shrink: 1;
+  				  				max-width: 150px;
+  				  				flex-basis:200px;
   				  }
       .float{
         background-color: #eee;
@@ -46,6 +47,15 @@
         padding: 20px;
         text-align: center;
       }
+  				   .centeral-1{
+        width: 200px;
+        height: 200px;
+        display: inline-block;;
+        justify-content: center;
+        align-items: center;
+        background-color: blue;
+        color: white;
+      }
       .centeral{
         width: 300px;
         height: 200px;
@@ -58,7 +68,7 @@
   				
     </style>
   </head>
-  <body>
+  <body style="width: 1000px;">
     <h2>Flex</h2>
     <div class="flex">
        <div class="one" style="order: 1;">One</div>
@@ -66,6 +76,7 @@
        <div class="three" style="order: 4;">Three</div>
        <div>Four</div>
     </div>
+  				<div class="centeral-1">Centeral text</div>
     <hr>
     <h2>Float</h2>
     <div class="float">
