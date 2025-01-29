@@ -11,35 +11,27 @@
       .flex{
         background-color: #eee;
         width: 600px;
-      				height: 400px;
-        display: inline-flex;
+        display: flex;
+        height: 400px;
         padding: 20px;
         margin: 20px auto;
-        flex-direction: row;
+        flex-wrap: wrap;
+        align-itmes: flex-start;
+        align-content: space-evenly;
       }
-  				   .flex div{
-        background-color: #f00;
-        color: white;
-        width: 100px;
-        padding: 20px;
-        text-align: center;
-      				margin-left: 6px;
-  				   				flex-grow: 0;
-  				   				flex-shrink: 1;
-      }
-  				  .flex .two{
-  				  				flex-grow: 0;
-  				  				flex-shrink: 1;
-  				  				max-width: 150px;
-  				  				flex-basis:200px;
-  				  				align-self: center;
-  				  }
       .float{
         background-color: #eee;
         width: 600px;
         overflow: hidden;
         padding: 20px;
         margin: 20px auto;
+      }
+      .flex div{
+        background-color: #f00;
+        color: white;
+        width: calc(98%/3);
+        padding: 20px;
+        text-align: center;
       }
       .float div{
         background-color: red;
@@ -48,15 +40,6 @@
         float: left;
         padding: 20px;
         text-align: center;
-      }
-  				   .centeral-1{
-        width: 200px;
-        height: 200px;
-        display: inline-block;;
-        justify-content: center;
-        align-items: center;
-        background-color: blue;
-        color: white;
       }
       .centeral{
         width: 300px;
@@ -67,18 +50,16 @@
         background-color: blue;
         color: white;
       }
-  				
     </style>
   </head>
-  <body style="width: 1000px;">
+  <body>
     <h2>Flex</h2>
     <div class="flex">
-       <div class="one" style="order: 1;">One</div>
-       <div class="two" style="order: 4;">Two</div>
-       <div class="three" style="order: 4;">Three</div>
+       <div class="one">One</div>
+       <div class="two">Two</div>
+       <div class="three">Three</div>
        <div>Four</div>
     </div>
-  				<div class="centeral-1">Centeral text</div>
     <hr>
     <h2>Float</h2>
     <div class="float">

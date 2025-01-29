@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>assignment</title>
+   <style>
+      .ass-1 div {
+         width: 100px;
+         height: 100px;
+         margin: 10px auto;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         color: #ff5903;
+         font-weight: bold;
+         font-family: sans-serif;
+         border-width: 0px 6px;
+         border-color: #ff5903 #ff5903 #0da6ff #0da6ff;
+         border-style: solid;
+         border-radius: 50%;
+         background-color: #eee;
+      }
+
+      .ass-2 .parent {
+         width: 600px;
+         height: 300px;
+         margin: 10px auto;
+         background-color: #eee;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         align-content: space-between;
+      }
+
+      .ass-2 .parent div {
+         background-color: red;
+         color: white;
+         width: 30%;
+         text-align: center;
+      }
+
+      .ass-3 .parent {
+         width: 600px;
+         height: 300px;
+         margin: 10px auto;
+         background-color: #eee;
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+      }
+
+      .ass-3 .parent div {
+         background-color: gray;
+         color: white;
+         width: 31%;
+         text-align: center;
+      }
+
+      .ass-3 .parent .one {
+         order: 6;
+         align-self: flex-end;
+         height: 50px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .ass-3 .parent .two {
+         order: 5;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .ass-3 .parent .three {
+         order: 2;
+         align-self: flex-start;
+         height: 50px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .ass-3 .parent .four {
+         order: 3;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .ass-3 .parent .five {
+         order: 4;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .ass-3 .parent .six {
+         order: 1;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .ass-4 .parent {
+         width: 600px;
+         height: 300px;
+         margin: 10px auto;
+         background-color: #eee;
+         display: flex;
+         flex-direction: column;
+         align-items: flex-end;
+      }
+
+      .ass-4 .parent div {
+         flex-basis: calc(100% / 3);
+         width: 50px;
+         background-color: green;
+         text-align: center;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         color: white;
+      }
+
+      .ass-4 .parent .two {
+         width: calc(100% / 3);
+         align-self: flex-start;
+      }
+
+      .ass-5 .parent {
+         width: 600px;
+         height: 300px;
+         margin: 10px auto;
+         background-color: #eee;
+         display: flex;
+         justify-content: space-between;
+      }
+
+      .ass-5 .parent div {
+         width: calc(100% / 5);
+         height: calc(100% / 2);
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         color: white;
+      }
+
+      .ass-5 .parent .one {
+         order: 2;
+         align-self: flex-start;
+         background-color: yellow;
+      }
+
+      .ass-5 .parent .two {
+         order: 3;
+         align-self: flex-end;
+         background-color: green;
+      }
+
+      .ass-5 .parent .three {
+         order: 4;
+         align-self: flex-start;
+         background-color: brown;
+      }
+
+      .ass-5 .parent .four {
+         order: 1;
+         align-self: flex-end;
+         background-color: purple;
+      }
+   :root{
+     --background: gray;
+     --text-color: black;
+     --margin: 10px;
+   }
+   .ass-6 .page{
+      background-color: #eee;
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .ass-6 .page .logo{
+     background-color: var(--background);
+     color: var(--text-color);
+     margin: var(--margin);
+     width: calc(100%10);
+     text-align: center;
+     height: 30px
+   }
+   </style>
+
+</head>
+
+<body>
+   <div class="ass-1">
+      <h2>assignment 1</h2>
+      <div>Elzero</div>
+   </div>
+   <div class="ass-2">
+      <h2>assignment 2</h2>
+      <div class="parent">
+         <div>1</div>
+         <div>2</div>
+         <div>3</div>
+         <div>4</div>
+         <div>5</div>
+         <div>6</div>
+      </div>
+   </div>
+   <div class="ass-3">
+      <h2>assignment 3</h2>
+      <div class="parent">
+         <div class="one">1</div>
+         <div class="two">2</div>
+         <div class="three">3</div>
+         <div class="four">4</div>
+         <div class="five">5</div>
+         <div class="six">6</div>
+      </div>
+   </div>
+   <div class="ass-4">
+      <h2>assignment 4</h2>
+      <div class="parent">
+         <div class="one">1</div>
+         <div class="two">2</div>
+         <div class="three">3</div>
+      </div>
+   </div>
+   <div class="ass-5">
+      <h2>assignment 5</h2>
+      <div class="parent">
+         <div class="one">1</div>
+         <div class="two">2</div>
+         <div class="three">3</div>
+         <div class="four">4</div>
+      </div>
+   </div>
+   <div class="ass-6">
+      <h2>assignment 6</h2>
+      <div class="page">
+         <div class="header">
+            <div class="logo">Logo</div>
+            <ul class="links">
+               <li>Home</li>
+               <li>About</li>
+               <li>Services</li>
+               <li>Contact</li>
+            </ul>
+         </div>
+         <div class="main-area">
+            <div class="content">Content</div>
+            <div class="sidebar">Sidebar</div>
+         </div>
+         <div class="footer">
+            <div class="copyright">Copyright 2021</div>
+            <div class="design">Designed By Elzero</div>
+         </div>
+      </div>
+   </div>
+</body>
