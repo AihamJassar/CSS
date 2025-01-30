@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+    <style>
+      * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+      }
+      .page {
+         background-color: #EEE;
+         height: 100vh;
+         display: grid;
+         grid-template-columns: repeat(10, 1fr);
+         grid-template-rows: 50px auto 50px;
+         grid-template-areas: "logo logo nav nav nav nav nav nav nav nav"
+                              "cont cont cont cont cont cont cont cont side side"
+                              "footer footer footer footer footer footer footer footer footer footer";
+     }
+     h2 {
+      background-color: red;
+      color: white;
+      grid-area: logo;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: center;
+    }
+    li {
+      display: inline-block;
+    }
+    nav {
+      background-color: blue;
+      color: white;
+      grid-area: nav;
+    }
+    section {
+      background-color: green;
+      color: white;
+      grid-area: cont;      
+    }
+    aside {
+      background-color: yellow;
+      color: white;
+      grid-area: side;
+    }
+    footer{
+      background-color: purple;
+      color: white;
+      grid-area: footer;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <h2>logo</h2>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>about</li>
+          <li>Services</li>
+          <li>Concat</li>
+        </ul>
+     </nav>
+     <section>content</section>
+     <aside>side bar</aside>
+     <footer>footer</footr>
+    </div>
+  </body>
+</html>
