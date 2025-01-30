@@ -48,7 +48,13 @@
 				  				left: 0;
 				  				background-color: red;
 				  				background-image: linear-gradient(to right, red 20%, blue 20%, blue 40%, green 40%, green 60%, yellow 60%, yellow 80%, purple 80%);
-				  				
+				  }
+				  input{
+				  				caret-color: red;
+				  }
+				  button{
+				  				pointer-events: none;
+				  				opacity: 50%;
 				  }
 				</style>
 </head>
@@ -58,5 +64,7 @@
 				 <img src="image.jpg" class="img-3" width="400px">
 		 		<div class="div-1"></div>
 				 <div class="div-2">Gradient</div>
+				 <input type="text">
+				<button onclick="alert('Clicked')">Click Me</button>
 </body>
 </html>
