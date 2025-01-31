@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>title</title>
+   <style>
+      * {
+         box-sizing: border-box;
+         
+      }
+
+      .page {
+         background-color: #EEE;
+         display: grid;
+         grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+         gap: 10px;
+      }
+
+      .one {
+         grid-area: 1 / 1 / 2 / 3;
+         background-color: white;
+         padding: 10px;
+      }
+      .two{
+         grid-area: 1 / 3 / 2 / 4;
+         background-color: white;
+         padding: 10px;
+      }
+      .three{
+         grid-area: 1 / 4 / 4 / 5;
+         background-color: black;
+         color: white;
+         padding: 10px;
+      }
+      .four{
+         grid-area: 2 / 1 / 4 / 2;
+         background-color: white;
+         color: black;
+         padding: 10px;
+      }
+      .five{
+         grid-area: 2 / 2 / 3 / 4;
+         background-color: black;
+         color: white;
+         padding: 10px;
+      }
+      .six{
+         grid-area: 3 / 2 / 4 / 4;
+         background-color: white;
+         color: black;
+         padding: 10px;
+      }
+      .seven{
+         grid-area: 4 / 1 / 5 / 2;
+         background-color: white;
+         color: black;
+         padding: 10px;
+      }
+      .eight{
+         grid-area: 4 / 2 / 5 / 3;
+         background-color: black;
+         color: white;
+         padding: 10px;
+      }
+      .nine{
+         grid-area: 4 / 3 / 5 / 4;
+         background-color: white;
+         color: black;
+         padding: 10px;
+      }
+      .ten{
+         grid-area: 4 / 4 / 5 / 5;
+         background-color: white;
+         color: black;
+         padding: 10px;
+      }
+      .page div{
+         border-bottom: 4px solid red;
+         position: relative;
+      }
+      .page div::after{
+         content: '"';
+         position: absolute;
+         bottom: -25px;
+         right: 10px;
+         opacity: 50%;
+         font-size: 50px;
+      }
+   </style>
+
+</head>
+
+<body>
+   <div class="page">
+      <div class="one">
+         <h2>Aiham Mohammed</h2>
+         <h3>Full-Stack Developer</h3>
+         <p class="p-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod atque
+            maiores voluptatem sed mollitia doloribus dignissimos dolor, animi,
+            minima temporibus quo suscipit reiciendis eveniet ratione!
+            Voluptatibus, placeat suscipit. Consequatur, atque!
+         </p>
+         <br />
+         <p class="p-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod atque
+            maiores voluptatem sed mollitia doloribus dignissimos dolor, animi,
+            minima temporibus quo suscipit reiciendis eveniet ratione!
+            Voluptatibus, placeat suscipit. Consequatur, atque!
+         </p>
+      </div>
+
+      <div class="two">
+         <h2>Aiham Mohammed</h2>
+         <h3>Full-Stack Developer</h3>
+         <p class="p-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod atque
+            maiores voluptatem sed mollitia doloribus dignissimos dolor, animi,
+            minima temporibus quo suscipit reiciendis eveniet ratione!
+            Voluptatibus, placeat suscipit. Consequatur, atque!
+         </p>
+         <br />
+         <p class="p-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod atque
+            maiores voluptatem sed mollitia doloribus dignissimos dolor, animi,
+            minima temporibus quo suscipit reiciendis eveniet ratione!
+            Voluptatibus, placeat suscipit. Consequatur, atque!
+         </p>
+      </div>
+
+      <div class="three">
+         <h2>Aiham Mohammed</h2>
+         <h3>Full-Stack Developer</h3>
+         <p class="p-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod atque
+            maiores voluptatem sed mollitia doloribus dignissimos dolor, animi,
+            minima temporibus quo suscipit reiciendis eveniet ratione!
+            Voluptatibus, placeat suscipit. Consequatur, atque!
+         </p>
+         <br />
+         <p class="p-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod atque
+            maiores voluptatem sed mollitia doloribus dignissimos dolor, animi,
+            minima temporibus quo suscipit reiciendis eveniet ratione!
+            Voluptatibus, placeat suscipit. Consequatur, atque!
+         </p>
+      </div>
+
+      <div class="four">
+         <h2>Aiham Mohammed</h2>
+         <h3>Full-Stack Developer</h3>
+         <p class="p-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod atque
+            maiores voluptatem sed mollitia doloribus dignissimos dolor, animi,
+            minima temporibus quo suscipit reiciendis eveniet ratione!
+            Voluptatibus, placeat suscipit. Consequatur, atque!
+         </p>
+         <br />
+         <p class="p-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod atque
+            maiores voluptatem sed mollitia doloribus dignissimos dolor, animi,
+            minima temporibus quo suscipit reiciendis eveniet ratione!
+            Voluptatibus, placeat suscipit. Consequatur, atque!
+         </p>
+      </div>
+
+      <div class="five">
+         <h2>Aiham Mohammed</h2>
+         <h3>Full-Stack Developer</h3>
+         <p class="p-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod atque
+            maiores voluptatem sed mollitia doloribus dignissimos dolor, animi,
+            minima temporibus quo suscipit reiciendis eveniet ratione!
+            Voluptatibus, placeat suscipit. Consequatur, atque!
+         </p>
+         <br />
+         <p class="p-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod atque
+            maiores voluptatem sed mollitia doloribus dignissimos dolor, animi,
+            minima temporibus quo suscipit reiciendis eveniet ratione!
+            Voluptatibus, placeat suscipit. Consequatur, atque!
+         </p>
+      </div>
+
+      <div class="six">
+         <h2>Aiham Mohammed</h2>
+         <h3>Full-Stack Developer</h3>
+         <p class="p-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod atque
+            maiores voluptatem sed mollitia doloribus dignissimos dolor, animi,
+            minima temporibus quo suscipit reiciendis eveniet ratione!
+            Voluptatibus, placeat suscipit. Consequatur, atque!
+         </p>
+         <br />
+         <p class="p-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod atque
+            maiores voluptatem sed mollitia doloribus dignissimos dolor, animi,
+            minima temporibus quo suscipit reiciendis eveniet ratione!
+            Voluptatibus, placeat suscipit. Consequatur, atque!
+         </p>
+      </div>
+
+      <div class="seven">
+         <h2>Aiham Mohammed</h2>
+         <h3>Full-Stack Developer</h3>
+         <p class="p-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod atque
+            maiores voluptatem sed mollitia doloribus dignissimos dolor, animi,
+            minima temporibus quo suscipit reiciendis eveniet ratione!
+            Voluptatibus, placeat suscipit. Consequatur, atque!
+         </p>
+         <br />
+         <p class="p-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod atque
+            maiores voluptatem sed mollitia doloribus dignissimos dolor, animi,
+            minima temporibus quo suscipit reiciendis eveniet ratione!
+            Voluptatibus, placeat suscipit. Consequatur, atque!
+         </p>
+      </div>
+
+      <div class="eight">
+         <h2>Aiham Mohammed</h2>
+         <h3>Full-Stack Developer</h3>
+         <p class="p-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod atque
+            maiores voluptatem sed mollitia doloribus dignissimos dolor, animi,
+            minima temporibus quo suscipit reiciendis eveniet ratione!
+            Voluptatibus, placeat suscipit. Consequatur, atque!
+         </p>
+         <br />
+         <p class="p-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod atque
+            maiores voluptatem sed mollitia doloribus dignissimos dolor, animi,
+            minima temporibus quo suscipit reiciendis eveniet ratione!
+            Voluptatibus, placeat suscipit. Consequatur, atque!
+         </p>
+      </div>
+
+      <div class="nine">
+         <h2>Aiham Mohammed</h2>
+         <h3>Full-Stack Developer</h3>
+         <p class="p-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod atque
+            maiores voluptatem sed mollitia doloribus dignissimos dolor, animi,
+            minima temporibus quo suscipit reiciendis eveniet ratione!
+            Voluptatibus, placeat suscipit. Consequatur, atque!
+         </p>
+         <br />
+         <p class="p-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod atque
+            maiores voluptatem sed mollitia doloribus dignissimos dolor, animi,
+            minima temporibus quo suscipit reiciendis eveniet ratione!
+            Voluptatibus, placeat suscipit. Consequatur, atque!
+         </p>
+      </div>
+
+      <div class="ten">
+         <h2>Aiham Mohammed</h2>
+         <h3>Full-Stack Developer</h3>
+         <p class="p-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod atque
+            maiores voluptatem sed mollitia doloribus dignissimos dolor, animi,
+            minima temporibus quo suscipit reiciendis eveniet ratione!
+            Voluptatibus, placeat suscipit. Consequatur, atque!
+         </p>
+         <br />
+         <p class="p-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod atque
+            maiores voluptatem sed mollitia doloribus dignissimos dolor, animi,
+            minima temporibus quo suscipit reiciendis eveniet ratione!
+            Voluptatibus, placeat suscipit. Consequatur, atque!
+         </p>
+      </div>
+   </div>
+</body>
+
+</html>

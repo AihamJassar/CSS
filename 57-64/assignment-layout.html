@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      .layout {
+         height: 100vh;
+         display: grid;
+         grid-template-columns: repeat(10, 1fr);
+                 grid-template-rows: 50px auto 50px;
+      }
+      header {
+        background-color: #03a9f4;
+        grid-area: 1 / 1 / 2 / 11;
+     }
+     section {
+       background-color: #f44336;  
+       grid-area: 2 / 1 / 3 / 9;
+     }
+     aside {  
+        background-color: #607d8b; 
+        grid-area: 2 / 9 / 3 / 11;
+     }
+     footer {
+        background-color: #009688;   
+        grid-area: 3 / 1 / 4 / 11;
+     } 
+     header::after{
+       content: "Header";
+       display: flex;
+       align-content: center;
+       padding: 10px;
+       color: white;
+     }   
+     section::after{
+       content: "Section";
+       display: flex;
+       align-content: center;
+       padding: 10px;
+       color: white;
+     }    
+     aside::after{
+       content: "Aside";
+       display: flex;
+       align-content: center;
+       padding: 10px;
+       color: white;
+     } 
+     footer::after{
+       content: "Footer";
+       display: flex;
+       align-content: center;
+       padding: 10px;
+       color: white;
+     } 
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <header></header>
+      <section></section>
+      <aside></aside>
+      <footer></footer>
+    </div>
+  </body>
+</html>
