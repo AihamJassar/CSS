@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+				<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+				<title>assignment</title>
+				<style>
+				  :root {
+				  				--ass-1-background-color: orange;
+				  				--ass-2-background-color: green;
+				  				--color: white;
+				  }
+				  .ass-1 h1,
+				  .ass-2 h1 {
+				  				width: 150px;
+				  				margin: auto;
+				  				padding: 20px;
+				  				background-color: var(--ass-1-background-color);
+				  				color: var(--color);
+				  				display: flex;
+				  				justify-content: center;
+				  				align-items: center;
+				  				position: relative;
+				  }
+				  .ass-1 h1::before,
+				  .ass-1 h1::after{
+				  				content: "";
+				  				width: 100%;
+				  				height: 100%;
+				  				background-color: var(--ass-1-background-color);
+				  				position: absolute;
+				  				left: 0;
+				  				top: 0;
+				  				z-index: -1;
+				  }
+				  .ass-1 h1::before {
+				  				transform: skew(10deg, 10deg);
+				  }
+				  .ass-1 h1::after {
+				  				transform: skew(-10deg, -10deg);
+				  }
+				  .ass-2 h1 {
+				  				background-color: var(--ass-2-background-color);
+				  }
+				  .ass-2 h1::before {
+				  				content: "";
+				  				width: 100%;
+				  				height: 100%;
+				  				background-color: var(--ass-2-background-color);
+				  				position: absolute;
+				  				left: -10%;
+				  				top: 0;
+				  				z-index: -1;
+				  				transform: skew(20deg, 0) ;
+				  }
+				  .ass-2 h1::after {
+				  				content: "";
+				  				width: 10%;
+				  				height: 100%;
+				  				background-color: var(--ass-2-background-color);;
+				  				position: absolute;
+				  				left: -25%;
+				  				top: 0;
+				  				z-index: -1;
+				  				transform: skew(20deg, 0) ;
+				  }
+				  /*
+				   .class {
+       matrix(3, 0.2679, 0, 3, 20, 100);
+     }
+				   scaleX(3), skewY(15deg), skewX(0deg), scaleY(3), translateX(20px), translateY(100px) 
+				  */
+				
+				  .ass-4 div {
+				  				width: 200px;
+				  				height: 200px;
+				  				margin: 100px auto;
+				  				background-color: gray;
+				  				border-bottom: 5px solid black;
+				  				position: relative;
+				  }
+				  .ass-4 div::before {
+				  				content: "";
+				  				width: 70%;
+				  				height: 70%;
+				  				background-color: black;
+				  				border-bottom: 3px solid white;
+				  				border-right: 3px solid white;
+				  				transform: rotate(45deg);
+				  				position: absolute;
+				  				left: 15%; 
+				  				top: -35%;
+				  }
+				  .ass-4 div::after {
+				  				content: "Elzero";
+				  				position: absolute;
+				  				left: 2%;
+				  				bottom: 2%;
+				  				font-weight: bold;
+				  				color: white;
+				  }
+				
+				  .ass-5 div{
+				  				width: 200px;
+				  				height: 200px;
+				  				margin: auto;
+				  				perspective: 800px;
+				  } 
+			  .ass-5::before {
+			  				width: 100%;
+			  				height: 100%;
+			  }	
+				</style>
+</head>
+<body>
+				<div class="ass-1">
+								<h2>assignment 1</h2>
+								<h1>Elzero</h1>
+				</div>
+				<div class="ass-2">
+								<h2>assignment 2</h2>
+								<h1>Elzero</h1>
+				</div>
+				<div class="ass-4">
+								<h2>assignment 4</h2>
+								<div></div>
+				</div>
+					<div class="ass-5">
+								<h2>assignment 5</h2>
+								<div></div>
+				</div>
+</body>
+</html>
