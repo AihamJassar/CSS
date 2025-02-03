@@ -1,251 +1,278 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
-				<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-				<title>assignment</title>
-				<style>
-				  :root {
-				  				--ass-1-background-color: orange;
-				  				--ass-2-background-color: green;
-				  				--color: white;
-				  }
-				  .ass-1 h1,
-				  .ass-2 h1 {
-				  				width: 150px;
-				  				margin: auto;
-				  				padding: 20px;
-				  				background-color: var(--ass-1-background-color);
-				  				color: var(--color);
-				  				display: flex;
-				  				justify-content: center;
-				  				align-items: center;
-				  				position: relative;
-				  }
-				  .ass-1 h1::before,
-				  .ass-1 h1::after{
-				  				content: "";
-				  				width: 100%;
-				  				height: 100%;
-				  				background-color: var(--ass-1-background-color);
-				  				position: absolute;
-				  				left: 0;
-				  				top: 0;
-				  				z-index: -1;
-				  }
-				  .ass-1 h1::before {
-				  				transform: skew(10deg, 10deg);
-				  }
-				  .ass-1 h1::after {
-				  				transform: skew(-10deg, -10deg);
-				  }
-				  .ass-2 h1 {
-				  				background-color: var(--ass-2-background-color);
-				  }
-				  .ass-2 h1::before {
-				  				content: "";
-				  				width: 100%;
-				  				height: 100%;
-				  				background-color: var(--ass-2-background-color);
-				  				position: absolute;
-				  				left: -10%;
-				  				top: 0;
-				  				z-index: -1;
-				  				transform: skew(20deg, 0) ;
-				  }
-				  .ass-2 h1::after {
-				  				content: "";
-				  				width: 10%;
-				  				height: 100%;
-				  				background-color: var(--ass-2-background-color);;
-				  				position: absolute;
-				  				left: -25%;
-				  				top: 0;
-				  				z-index: -1;
-				  				transform: skew(20deg, 0) ;
-				  }
-				  /*
-				   .class {
-       matrix(3, 0.2679, 0, 3, 20, 100);
-     }
-				   scaleX(3), skewY(15deg), skewX(0deg), scaleY(3), translateX(20px), translateY(100px) 
-				  */
-				
-				  .ass-4 div {
-				  				width: 200px;
-				  				height: 200px;
-				  				margin: 100px auto;
-				  				background-color: gray;
-				  				border-bottom: 5px solid black;
-				  				position: relative;
-				  }
-				  .ass-4 div::before {
-				  				content: "";
-				  				width: 70%;
-				  				height: 70%;
-				  				background-color: black;
-				  				border-bottom: 3px solid white;
-				  				border-right: 3px solid white;
-				  				transform: rotate(45deg);
-				  				position: absolute;
-				  				left: 15%; 
-				  				top: -35%;
-				  }
-				  .ass-4 div::after {
-				  				content: "Elzero";
-				  				position: absolute;
-				  				left: 2%;
-				  				bottom: 2%;
-				  				font-weight: bold;
-				  				color: white;
-				  }
-				  .ass-5{
-				  				perspective: 800px;
-				  }
-				  .ass-5 div{
-				  				width: 200px;
-				  				height: 200px;
-				  				margin: 20px auto;
-				  				position: relative;
-				  				font-size: 30px;
-			  				font-weight: bold;
-			  				color: white;
-				  				transform-style: preserve-3d;
-				  				transition: 1s;
-				  } 
-			  .ass-5 div::before {
-			  				content: "Front";
-			  				width: 100%;
-			  				height: 100%;
-			  				background-color: red;
-			  				position: absolute;
-				  				top: 0;
-			  				left: 0;
-			  				display: flex;
-			  				justify-content: center;
-			  				align-items: center;
-			  }
-				  .ass-5 div::after {
-				  				content: "Back";
-				  				width: 100%;
-			  				height: 100%;
-				  				background-color: green;
-			  				position: absolute;
-				  				top: 0;
-			  				left: 0;
-			  				display: flex;
-			  				justify-content: center;
-			  				align-items: center;
-			  				backface-visibility: hidden;
-				  				transform: rotateY(180deg);
-				  }
-				  .ass-5 div:hover{
-				  				transform: rotateY(-180deg);
-				  }
-				 .ass-6 div{
-				 				width: 300px;
-				 				height: 200px;
-				 				margin: 20px auto;
-				 				background-color: gray;
-				 				display: flex;
-				 				justify-content: center;
-				 				align-items: center;
-				 				font-size: 30px;
-				 				font-weight: bold;
-				 				color: white;
-				 				position: relative;
-				 }
-				 .ass-6 div::before,
-				 .ass-6 div::after {
-				 				content: "";
-				 				width: 100%;
-				 				height: 100%;
-				 				margin: 20px auto;
-				 				position: absolute;
-				 				z-index: -1;
-				 }
-				 .ass-6 div::before {
-				 				background-color: blue;
-				 				transform: rotate(5deg);
-				 }
-				 .ass-6 div::after {
-				 				background-color: red;
-				 				transform: rotate(-5deg);
-				 }
-				
-				 .ass-7 div{
-				 				width: 200px;
-				 				height: 200px;
-				 				margin: auto;
-				 				background-color: gray;
-				 				border-radius: 50%;
-				 				display: flex;
-				 				justify-content: center;
-				 				align-items: center;
-				 				font-size: 30px;
-				 				font-weight: bold;
-				 				color: white;
-				 				position: relative;
-				 				
-				 }
-		 		.ass-7 div::after {
-		 						content: "";
-				 				width: 100%;
-				 				height: 100%;
-		 						border-radius: 50%;
-				 				margin: 20px auto;
-				 				position: absolute;
-		 						border: 10px solid blue;
-		 						border-right: 10px solid transparent;
-		 						transition: 0.5s;
-		 						
-				 }
-				 .ass-7 div:hover::after{
-				 				transform: rotate(360deg);
-				 }
-				 .ass-7 div::before {
-		 						content: "";
-				 				width: 105%;
-				 				height: 105%;
-		 						border-radius: 50%;
-				 				margin: 20px auto;
-				 				position: absolute;
-		 						border: 10px solid red;
-		 						border-left: 10px solid transparent;
-		 						transition-duration: 0.5s;
-				 				transition-delay: 0.5s;
-				 }
-				 .ass-7 div:hover::before{
-				 				transform: rotate(-360deg);
-				 }
-				 				
-				 }
-				</style>
+	<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8" />
+	<title>assignment</title>
+	<style>
+		:root {
+			--ass-1-background-color: orange;
+			--ass-2-background-color: green;
+			--color: white;
+		}
+
+		.ass-1 h1,
+		.ass-2 h1 {
+			width: 150px;
+			margin: auto;
+			padding: 20px;
+			background-color: var(--ass-1-background-color);
+			color: var(--color);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+
+		.ass-1 h1::before,
+		.ass-1 h1::after {
+			content: "";
+			width: 100%;
+			height: 100%;
+			background-color: var(--ass-1-background-color);
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: -1;
+		}
+
+		.ass-1 h1::before {
+			transform: skew(10deg, 10deg);
+		}
+
+		.ass-1 h1::after {
+			transform: skew(-10deg, -10deg);
+		}
+
+		.ass-2 h1 {
+			background-color: var(--ass-2-background-color);
+		}
+
+		.ass-2 h1::before {
+			content: "";
+			width: 100%;
+			height: 100%;
+			background-color: var(--ass-2-background-color);
+			position: absolute;
+			left: -10%;
+			top: 0;
+			z-index: -1;
+			transform: skew(20deg, 0);
+		}
+
+		.ass-2 h1::after {
+			content: "";
+			width: 10%;
+			height: 100%;
+			background-color: var(--ass-2-background-color);
+			;
+			position: absolute;
+			left: -25%;
+			top: 0;
+			z-index: -1;
+			transform: skew(20deg, 0);
+		}
+
+		/*
+        .class {
+        matrix(3, 0.2679, 0, 3, 20, 100);
+      }
+        scaleX(3), skewY(15deg), skewX(0deg), scaleY(3), translateX(20px), translateY(100px)
+       */
+
+		.ass-4 div {
+			width: 200px;
+			height: 200px;
+			margin: 100px auto;
+			background-color: gray;
+			border-bottom: 5px solid black;
+			position: relative;
+		}
+
+		.ass-4 div::before {
+			content: "";
+			width: 70%;
+			height: 70%;
+			background-color: black;
+			border-bottom: 3px solid white;
+			border-right: 3px solid white;
+			transform: rotate(45deg);
+			position: absolute;
+			left: 15%;
+			top: -35%;
+		}
+
+		.ass-4 div::after {
+			content: "Elzero";
+			position: absolute;
+			left: 2%;
+			bottom: 2%;
+			font-weight: bold;
+			color: white;
+		}
+
+		.ass-5 {
+			perspective: 800px;
+		}
+
+		.ass-5 div {
+			width: 200px;
+			height: 200px;
+			margin: 20px auto;
+			position: relative;
+			font-size: 30px;
+			font-weight: bold;
+			color: white;
+			transform-style: preserve-3d;
+			transition: 1s;
+		}
+
+		.ass-5 div::before {
+			content: "Front";
+			width: 100%;
+			height: 100%;
+			background-color: red;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.ass-5 div::after {
+			content: "Back";
+			width: 100%;
+			height: 100%;
+			background-color: green;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			backface-visibility: hidden;
+			transform: rotateY(180deg);
+		}
+
+		.ass-5 div:hover {
+			transform: rotateY(-180deg);
+		}
+
+		.ass-6 div {
+			width: 300px;
+			height: 200px;
+			margin: 20px auto;
+			background-color: gray;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 30px;
+			font-weight: bold;
+			color: white;
+			position: relative;
+		}
+
+		.ass-6 div::before,
+		.ass-6 div::after {
+			content: "";
+			width: 100%;
+			height: 100%;
+			margin: 20px auto;
+			position: absolute;
+			z-index: -1;
+		}
+
+		.ass-6 div::before {
+			background-color: blue;
+			transform: rotate(5deg);
+		}
+
+		.ass-6 div::after {
+			background-color: red;
+			transform: rotate(-5deg);
+		}
+
+		.ass-7 div {
+			width: 200px;
+			height: 200px;
+			margin: auto;
+			background-color: gray;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 30px;
+			font-weight: bold;
+			color: white;
+			position: relative;
+
+		}
+
+		.ass-7 div::after {
+			content: "";
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			margin: 20px auto;
+			position: absolute;
+			border: 10px solid blue;
+			border-right: 10px solid transparent;
+			transition: 0.5s;
+
+		}
+
+		.ass-7 div:hover::after {
+			transform: rotate(360deg);
+		}
+
+		.ass-7 div::before {
+			content: "";
+			width: 105%;
+			height: 105%;
+			border-radius: 50%;
+			margin: 20px auto;
+			position: absolute;
+			border: 10px solid red;
+			border-left: 10px solid transparent;
+			transition-duration: 0.5s;
+			transition-delay: 0.5s;
+		}
+
+		.ass-7 div:hover::before {
+			transform: rotate(-360deg);
+		}
+
+		}
+	</style>
 </head>
+
 <body>
-				<div class="ass-1">
-								<h2>assignment 1</h2>
-								<h1>Elzero</h1>
-				</div>
-				<div class="ass-2">
-								<h2>assignment 2</h2>
-								<h1>Elzero</h1>
-				</div>
-				<div class="ass-4">
-								<h2>assignment 4</h2>
-								<div></div>
-				</div>
-					<div class="ass-5">
-								<h2>assignment 5</h2>
-								<div></div>
-				</div>
-				<div class="ass-6">
-								<h2>assignment 6</h2>
-								<div>Elzero</div>
-				</div>
-								<div class="ass-7">
-								<h2>assignment 6 & 7</h2>
-								<div>Elzero</div>
-				</div>
+	<div class="ass-1">
+		<h2>assignment 1</h2>
+		<h1>Elzero</h1>
+	</div>
+	<div class="ass-2">
+		<h2>assignment 2</h2>
+		<h1>Elzero</h1>
+	</div>
+	<div class="ass-4">
+		<h2>assignment 4</h2>
+		<div></div>
+	</div>
+	<div class="ass-5">
+		<h2>assignment 5</h2>
+		<div></div>
+	</div>
+	<div class="ass-6">
+		<h2>assignment 6</h2>
+		<div>Elzero</div>
+	</div>
+	<div class="ass-7">
+		<h2>assignment 6 & 7</h2>
+		<div>Elzero</div>
+	</div>
 </body>
+
 </html>
