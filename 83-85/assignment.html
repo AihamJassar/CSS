@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media print {
+            .ass-1 .assign-one {
+                font-size: 40px;
+            }
+        }
+
+        .ass-2 {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .span {
+            display: block;
+        }
+
+        .ass-2>div {
+            background-color: rgb(193, 190, 187);
+            width: 100%;
+            height: 60px;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (max-width: 676px) {}
+
+        @media (min-width: 677px) {
+            .ass-2 div {
+                color: aqua;
+                width: calc(50% - 5px);
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .ass-2 div {
+                color: red;
+                width: calc(25% - 5px);
+            }
+        }
+
+        .ass-3 {
+            height: 260px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 60px);
+            gap: 5px;
+        }
+
+        .ass-3>div {
+            background-color: rgb(193, 190, 187);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ass-3 .one {
+            grid-area: 1 / 1 / 2 / 4;
+        }
+
+        .ass-3 .two {
+            grid-area: 2 / 1 / 3 / 4;
+        }
+
+        .ass-3 .three {
+            grid-area: 3 / 1 / 4 / 4;
+        }
+
+        .ass-3 .four {
+            grid-area: 4 / 1 / 5 / 4;
+        }
+
+
+        @media (max-width: 676px) {}
+
+        @media (min-width: 677px) {
+            .ass-3 div {
+                color: red;
+            }
+            .ass-3 .two {
+                grid-area: 2 / 1 / 3 / 2;
+            }
+
+            .ass-3 .three {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+
+            .ass-3 .four {
+                grid-area: 2 / 3 / 3 / 4;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .ass-3 div {
+                color: green;
+            }
+            .ass-3 .two {
+                grid-column: 50%;
+                grid-row: 2 / 3;
+            }
+
+            .ass-3 .three {
+                grid-column: 50%;
+                grid-row: 2 / 3;
+            }
+
+            .ass-3 .four {
+                grid-area: 3 / 1 / 4 / 4;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ass-1">
+        <h2>assignment 1</h2>
+        <div class="assign-one">Elzero Web School</div>
+    </div>
+    <h2>assignment 2</h2>
+    <div class="ass-2">
+
+        <div>Product One</div>
+        <div>Product Two</div>
+        <div>Product Three</div>
+        <div>Product Four</div>
+    </div>
+    <h2>assignment 3</h2>
+    <div class="ass-3">
+        <div class="one">Product One</div>
+        <div class="two">Product Two</div>
+        <div class="three">Product Three</div>
+        <div class="four">Product Four</div>
+    </div>
+</body>
+
+</html>
