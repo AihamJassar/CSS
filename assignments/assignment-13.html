@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: #EEE;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px;
+        }
+
+        .standard,
+        .pro,
+        .Unlimited {
+            width: 25%;
+            background-color: white;
+            padding: 10px;
+            position: relative;
+            box-shadow: -1px 1px 1px;
+            border-radius: 10px;
+
+        }
+
+        .standard div .pro div,
+        .Unlimited div {
+            margin: 10px;
+
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .body {
+            .one {
+                font-size: x-large;
+                font-weight: bold;
+            }
+
+            .two {
+                font-size: medium;
+                font-weight: bold;
+            }
+
+            .three {
+                font-size: x-small;
+                opacity: 50%;
+            }
+
+        }
+
+        .footer {
+            .one {
+                font-size: small;
+                font-weight: bold;
+            }
+
+            .two {
+                font-size: xx-small;
+                opacity: 50%;
+            }
+        }
+
+        .standard::after,
+        .pro::after,
+        .Unlimited::after {
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #a1a1a1;
+            position: absolute;
+            top: 15px;
+            right: 10px;
+
+        }
+
+        .standard {
+            border: 2px solid blue
+        }
+
+        .standard::after {
+            background-color: blue;
+        }
+
+        .standard:hover::after,
+        .pro:hover::after,
+        .Unlimited:hover::after {
+            background-color: blue;
+        }
+
+        .standard:hover,
+        .pro:hover,
+        .Unlimited:hover {
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="standard">
+            <div class="title">Standard</div>
+            <div class="body"><span class="one">1</span><span class="two">TB&nbsp;</span><span
+                    class="three">(1000gb)</span></div>
+            <div class="footer"><span class="one">$40/</span><span class="two">month</span></div>
+        </div>
+        <div class="pro">
+            <div class="title">Standard</div>
+            <div class="body"><span class="one">1</span><span class="two">TB&nbsp;</span><span
+                    class="three">(1000gb)</span></div>
+            <div class="footer"><span class="one">$40/</span><span class="two">month</span></div>
+        </div>
+        <div class="Unlimited">
+            <div class="title">Standard</div>
+            <div class="body"><span class="one">1</span><span class="two">TB&nbsp;</span><span
+                    class="three">(1000gb)</span></div>
+            <div class="footer"><span class="one">$40/</span><span class="two">month</span></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: #EEE;
+            padding: 30px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .container .personal,.business,.enterprise {
+            width: 25%;
+            height: 400px;
+            background-color: #FFF;
+            margin-bottom: 30px;
+            padding: 20px;
+            box-shadow: 1px 1px 3px;
+
+        }
+        .business {
+            position: relative;
+        }
+        .business::after {
+            content: "Most Popular";
+            width: 80%;
+            height: 35px;
+            background-color: rgb(39, 169, 244);
+            position: absolute;
+            top: -17px;
+            left: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        h3 {
+            margin: 20px;
+            font-size: 30px;
+        }
+
+        .info,
+        p,
+        a,
+        h3 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .info {
+            color: rgb(12, 140, 232);
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        small {
+            color: rgb(129, 129, 129);
+            font-weight: 100;
+        }
+
+        p:not(.info) {
+            font-size: 15px;
+            color: rgb(129, 129, 129);
+        }
+
+        a {
+            width: 100px;
+            height: 30px;
+            border-radius: 20px;
+            text-decoration: none;
+            background-color: rgb(39, 169, 244);
+            color: white;
+            margin: auto;
+            align-items: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="personal">
+            <h3>Personal</h3>
+            <p class="info"><sup>$</sup>10<small><sub>/ Mo</sub></small></p>
+            <p><b>Free&nbsp;</b> Weekly Meeting</p>
+            <p><b>1x&nbsp;</b> Monthly Call</p>
+            <p><b>Unlimited&nbsp;</b> Messenger</p>
+            <p><b>Free&nbsp;</b> Control Panel Access</p>
+            <p><b>1x&nbsp;</b> Face to Meeting</p>
+            <a href="#">Buy Now</a>
+        </div>
+        <div class="business">
+            <h3>Business</h3>
+            <p class="info"><sup>$</sup>15<small><sub>/ Mo</sub></small></p>
+            <p><b>Free&nbsp;</b>Weekly Meeting</p>
+            <p><b>2x&nbsp;</b> Monthly Call</p>
+            <p><b>Unlimited&nbsp;</b> Messenger</p>
+            <p><b>Free&nbsp;</b> Control Panel Access</p>
+            <p><b>2x&nbsp;</b> Face to Meeting</p>
+            <a href="#">Buy Now</a>
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+        <div class="enterprise">
+            <h3>Enterprise</h3>
+            <p class="info"><sup>$</sup>20<small><sub>/ Mo</sub></small></p>
+            <p><b>Free&nbsp;</b>Weekly Meeting</p>
+            <p><b>3x&nbsp;</b> Monthly Call</p>
+            <p><b>Unlimited&nbsp;</b> Messenger</p>
+            <p><b>Free&nbsp;</b> Control Panel Access</p>
+            <p><b>3x&nbsp;</b> Face to Meeting</p>
+            <a href="#">Buy Now</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

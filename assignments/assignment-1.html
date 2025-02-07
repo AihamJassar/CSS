@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../helpers.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="font.css" />
+    <link rel="stylesheet" href="libs/kit.css" />
+    <link rel="stylesheet" href="libs/ui.css" />
+    <link rel="stylesheet" href="libs/custom/custom.css" />
+    <style>
+        :root {
+            --border-width: 5px;
+        }
+
+        .elzero-lines {
+            /* Write Your CSS Code */
+            width: 300px;
+            height: 100px;
+            margin: 50px auto;
+            background-color: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            outline: var(--border-width) solid black;
+            border: var(--border-width) solid green;
+            position: relative;
+        }
+
+        .elzero-lines::after {
+            content: "";
+            width: 285px;
+            height: 85px;
+            outline: var(--border-width) solid blue;
+            border: var(--border-width) solid red;
+            position: absolute;
+        }
+
+        .ass-4 .input-box {
+            width: 300px;
+            height: 50px;
+            background-color: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ass-4 input {
+            width: 250px;
+            height: 30px;
+            border: none;
+        }
+
+        .ass-4 span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            background-color: rgb(3, 104, 45);
+            color: #fff;
+        }
+
+        .menu {
+            width: 100px;
+            height: 80px;
+            background-color: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .menu span {
+            width: 80%;
+            height: 20%;
+            border-radius: 7px;
+            background-color: #000;
+            transition-duration: 0.5s;
+        }
+
+        .menu:hover {
+            :nth-child(1) {
+                transform: rotate(45deg);
+                background-color: #f00;
+                position: absolute;
+            }
+
+            :nth-child(2) {
+                transform: translateX(-100%);
+                opacity: 0;
+                background-color: #f00;
+                position: absolute;
+            }
+
+            :nth-child(3) {
+                transform: rotate(-45deg);
+                background-color: #f00;
+                position: absolute;
+            }
+        }
+
+        .ass-6 a {
+            text-decoration: none;
+            color: #000;
+
+            ~[href="courses"] {
+                color: red;
+            }
+        }
+
+        .ass-6 a[href="https://www.elzero.courses/"] {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ass-1">
+        <h2>assignment 1</h2>
+        <div class="elzero-lines">Lines</div>
+    </div>
+    <div class="ass-4">
+        <h2>assignment 4</h2>
+        <div class="input-box">
+            <span class="prefix">+20</span>
+            <input type="tel" placeholder="1011001100" />
+        </div>
+    </div>
+    <div class="ass-5">
+        <h2>assignment 5</h2>
+        <div class="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="ass-6">
+        <h2>assignment 6</h2>
+        <a class="url" href="https://google.com">Google</a>
+        <a class="link" href="https://elzero.org/">Elzero Academy</a>
+        <a href="https://www.elzero.courses/">Elzero Courses</a>
+    </div>
+</body>
+
+</html>
