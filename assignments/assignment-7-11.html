@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+				<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+				<title>Hello, World!</title>
+				<style>
+					 .parent {
+								width: 200px;
+								height: 5px;
+								background-color: #EEE;
+								margin: 50px auto;
+				}	
+				.parent > div {
+								width: 0;
+								height: 5px;
+								background-color: #00F;
+								animation-name: loading;
+								animation-duration: 10s;
+								animation-timing-function: linear;
+								animation-fill-mode: forwards;
+				}	
+				@keyframes loading {
+								to{
+												width: 200px;
+								}
+								
+				}
+				.box {
+								width: 100px;
+								height: 100px;
+								border-radius: 50%;
+								background-color: #EEE;
+								border: 5px solid black;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								font-size: 20px;
+								font-weight: bold;
+								
+							/	*transform: translateX(-110%);*/
+								margin: auto;
+								animation-name: moving;
+								animation-duration: 3s;
+								animation-timing-function: linear;
+								animation-fill-mode: forwards;
+				}
+				@keyframes moving {
+								to {
+												transform: rotateY(1turn);
+								}
+				}
+				@keyframes rolling {
+								to {
+												transform: rotate(5turn);
+								}
+				}
+				body{
+								perspective: 800px;
+				}
+				.menu {
+								width: 150px;
+								height: 100px;
+								background-color: #EEE;
+								margin: 50px auto;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								flex-wrap: wrap;
+								position: relative;
+								transform-style: preserve-3d;
+				}
+				.menu div {
+								width: 120px;
+								height: 20px;
+								border-radius: 10px;
+								margin: 3px auto;
+								background-color: #000;
+								position: absolu;
+								transition: .5s;
+				}
+				.menu:hover {
+								.top {
+												transform: rotate(45deg);
+												position: absolute;
+												background-color: #F00;
+								}
+								.mid {
+												position: absolute;
+												opacity: 0;
+												/*left: -100%;*/
+												
+												background-color: #F00;
+								}
+								.bottom {
+												transform: rotate(-45deg);
+												position: absolute;
+												background-color: #F00;
+								}
+				}
+				 ul {
+				 				background-color: #EEE;
+				 				padding: 5px;
+				 				list-style: none;
+				 }
+				 li {
+								background-color: #FFF;
+								margin: 5px;
+								padding: 15px;
+								padding-left: 40px;
+								position: relative;
+								counter-increment: counter;
+				}
+				
+				.ass-7 > ul li:nth-child(4) {
+								background-color: #EEE;
+								li::before {
+												content: counter(counter) "."counter(sub-counter);
+												background-color: #0a8;
+												color: white;
+								}
+								li {
+								counter-increment: sub-counter;
+				}
+				}
+				.ass-7 > ul li:nth-child(4)::before {
+								background-color: white;
+				}
+				li::before {
+								content: counter(counter);
+								width: 30px;
+								height: 30px;
+								background-color: #EEE;
+								position: absolute;
+								left: 5px;
+								top: 8px;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								font-size: 15px;
+								font-weight: bold;
+								color: black;
+				}
+				a {
+								position: relative;
+								height: 30px;
+								display: block;
+								margin: 10px;
+				}
+				a::before {
+								content: "Name: " attr(title) " | " attr(href);
+								width: fit-content;
+								height: 30px;
+								border-radius: 5px;
+								padding: 0 5px;
+								display: flex;
+								align-items: center;
+								position: absolute;
+								color: white;
+								background-color: #08f;
+								font-size: 15px;
+								font-weight: bold;
+				}
+				.ass-9 .text {
+								font-size: 50px;
+								font-weight: bold;
+								text-transform: capitalize;
+								background: linear-gradient(to top, yellow, red);
+								-webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+				}
+				.container {
+								width: 400px;
+								height: 400px;
+								border: 5px solid;
+								display: grid;
+								grid-template: repeat(8, 1fr) / repeat(8, 1fr);
+				}
+				.white {
+								background-color: white;
+				}
+				.black {
+								background-color: black;
+				}
+				td, th {
+								background-color: #EEE;
+								padding: 10px;
+								text-align: center;
+								
+				}
+				td:hover {
+								border: 1px solid blue;
+				}
+				tr:hover {
+								td{background-color: red;}
+    
+}
+				body{width:500px}
+				.ass-15 h2 {
+								text-shadow: 1px 1px 0 red, -1px -1px 0 red;
+								color: white;
+								
+				}
+				</style>
+</head>
+<body>
+				<h1>
+								Hello, World!
+				</h1>
+				<div class="parent">
+								<div></div>
+				</div>
+				<div class="box">TEXT</div>
+				<div class="menu">
+								<div class="top"></div>
+								<div class="mid"></div>
+								<div class="bottom"></div>
+				</div>
+				<div class="ass-7">
+								<h2>assignment 7</h2>
+								<ul>
+  <li>List item</li>
+  <li>List item</li>
+  <li>List item</li>
+  <li>
+    List item
+    <ul>
+      <li>Sub List item</li>
+      <li>Sub List item</li>
+      <li>Sub List item</li>
+    </ul>
+  </li>
+</ul>
+				</div>
+				<div class="ass-8">
+								<h2>assignment 8</h2>
+								<a class="url" href="https://google.com" title="Google"></a>
+   <a class="link" href="https://elzero.org/" title="Elzero Academy"></a>
+   <a href="https://www.elzero.courses/" title="Elzero Courses"></a>
+				</div>
+				<div class="ass-9">
+								<h2>assignment 9</h2>
+								<div class="text">elzero web school</div>
+				</div>
+				<div class="ass-10">
+								<h2>assignment 10</h2>
+								<div class="container">
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+  <div class="black"></div>
+  <div class="white"></div>
+</div>
+				</div>
+				<div class="ass-11">
+								<h2>assignment 11</h2>
+								<table>
+  <tr>
+    <th>Language</th>
+    <th>Created By</th>
+    <th>Created Year</th>
+  </tr>
+  <tr>
+    <td>Python</td>
+    <td>Guido van Rossum</td>
+    <td>1991</td>
+  </tr>
+  <tr>
+    <td>Java</td>
+    <td>James Gosling</td>
+    <td>1995</td>
+  </tr>
+  <tr>
+    <td>JavaScript</td>
+    <td>Brendan Eich</td>
+    <td>1995</td>
+  </tr>
+  <tr>
+    <td>PHP</td>
+    <td>Rasmus Lerdorf</td>
+    <td>1995</td>
+  </tr>
+  <tr>
+    <td>Swift</td>
+    <td>Chris Lattner</td>
+    <td>2014</td>
+  </tr>
+</table>
+				</div>
+				<div class="ass-15">
+								<h1>assignment 15</h1>
+								<h2>Elzero Web School</h2>
+				</div>
+</body>
+</html>
