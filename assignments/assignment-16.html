@@ -1,234 +1,413 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
-				<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-				<title>Hello, World!</title>
-				<style>
-				  * {
-				  				box-sizing: border-box;
-				  }
-				  table {
-				  				border-collapse: collapse;
-				  }
-				  td {
-				  				border: 1px solid gray;
-				  				padding: 15px;
-				  				text-align: center;
-				  }
-				  th {
-				  				border: 1px solid;
-				  				padding: 15px;
-				  				background-color: #ccc;
-				  }
-				  tfoot tr td {
-				  				background-color: #99f;
-				  				border-color: white;
-				  }
-				  tfoot tr td:nth-child(1) {
-				  				background-color: yellow;
-				  }
-				  caption {
-				  				background-color: #ccc;
-				  				padding: 10px;
-				  				caption-side: bottom;
-				  }
-				 body {
-				 				wid-th: 800px;
-				 }
-				 .ass-17 div {
-				 				background-color: #ccc;
-				 				margin: 20px auto;
-				 				padding: 10px;
-				 }
-				 .ass-17 div::first-line {
-				 				color: red;
-				 }
-				.ass-18 ul {
-								list-style: none;
-								padding-left: 0;
-								background-color: #ccc;
-				}
-				.ass-18 ul li {
-								background-color: #EEE;
-								padding: 20px;
-								margin-bottom: 1px;
-								display: flex;
-								align-items: center;
-								position: relative;
-								counter-increment: li-counter;
-				}
-				:root {
-								--num: calc(counter(li-counter) + 2)
-				}
-				.ass-18 ul li::before {
-								content: "("counter(li-counter)")";
-								width: 40px;
-								height: 40px;
-								border-radius: 50%;
-								display: flex;
-								justify-content: center;
-								align-items: center;
-								background-color: red;
-								color: white;
-								position: absolute;
-								right: 10px;
-								
-				}
-				.ass-18 ul li:nth-child(odd):before {
-												background-color: purple;
-								}
-				.ass-19 div {
-    width: 300px;
-    height: 150px;
-    margin: 50px auto;
-    background-color: white;
-    border: 40px solid;
-    border-color: red blue green yellow orange purple pink;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-				.ass-20 h1 {
-								width: 120px;
-								height: 60px;
-								margin: 50px auto;
-								font-size: 20px;
-								font-weight: bold;
-								display: flex;
-								justify-content: center;
-								align-items: center;
-								border: 3px solid;
-								border-color: black red;
-								border-top: none;
-								border-radius: 20px;
-								box-shadow: 0 7px 0 0 red;
-								position: relative;
-				}
-				.ass-20 h1::after, .ass-20 h1::before {
-								content: "";
-								width: 10px;
-								height: 10px;
-								border-radius: 50%;
-								border: 3px solid red;
-								position: absolute;
-								display: flex;
-								align-items: center;
-				}
-				.ass-20 h1::before {
-								left: -17px;
-				}
-				.ass-20 h1::after {
-								right: -17px;
-				}
-				</style>
+	<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+	<title>Hello, World!</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		td {
+			border: 1px solid gray;
+			padding: 15px;
+			text-align: center;
+		}
+
+		th {
+			border: 1px solid;
+			padding: 15px;
+			background-color: #ccc;
+		}
+
+		tfoot tr td {
+			background-color: #99f;
+			border-color: white;
+		}
+
+		tfoot tr td:nth-child(1) {
+			background-color: yellow;
+		}
+
+		caption {
+			background-color: #ccc;
+			padding: 10px;
+			caption-side: bottom;
+		}
+
+		.ass-17 div {
+			background-color: #ccc;
+			margin: 20px auto;
+			padding: 10px;
+		}
+
+		.ass-17 div::first-line {
+			color: red;
+		}
+
+		.ass-18 ul {
+			list-style: none;
+			padding-left: 0;
+			background-color: #ccc;
+		}
+
+		.ass-18 ul li {
+			background-color: #EEE;
+			padding: 20px;
+			margin-bottom: 1px;
+			display: flex;
+			align-items: center;
+			position: relative;
+			counter-increment: li-counter;
+		}
+
+		:root {
+			--num: calc(counter(li-counter) + 2)
+		}
+
+		.ass-18 ul li::before {
+			content: "(" counter(li-counter)")";
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: red;
+			color: white;
+			position: absolute;
+			right: 10px;
+
+		}
+
+		.ass-18 ul li:nth-child(odd):before {
+			background-color: purple;
+		}
+
+		.ass-19 div {
+			width: 300px;
+			height: 150px;
+			margin: 50px auto;
+			background-color: white;
+			border: 40px solid;
+			border-color: red blue green yellow orange purple pink;
+			text-align: center;
+			font-size: 20px;
+			font-weight: bold;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.ass-20 h1 {
+			width: 120px;
+			height: 60px;
+			margin: 50px auto;
+			font-size: 20px;
+			font-weight: bold;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 3px solid;
+			border-color: black red;
+			border-top: none;
+			border-radius: 20px;
+			box-shadow: 0 7px 0 0 red;
+			position: relative;
+		}
+
+		.ass-20 h1::after,
+		.ass-20 h1::before {
+			content: "";
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			border: 3px solid red;
+			position: absolute;
+			display: flex;
+			align-items: center;
+		}
+
+		.ass-20 h1::before {
+			left: -17px;
+		}
+
+		.ass-20 h1::after {
+			right: -17px;
+		}
+
+		.ass-21 .grid {
+			width: 300px;
+			height: 200px;
+			display: grid;
+			grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+			gap: 5px;
+			background-color: #EEE;
+		}
+
+		.ass-21 .grid div {
+			border-radius: 10px;
+		}
+
+		.ass-21 .grid .one {
+            background-image: url(images/image_1.jpg);
+			grid-area: 1 / 1 / 3 / 2;
+		}
+
+		.ass-21 .grid .two {
+			background-image: url(images/image_2.jpg);
+			grid-area: 1 / 2 / 2 / 3;
+		}
+
+		.ass-21 .grid .three {
+			background-image: url(images/image_3.jpg);
+			grid-area: 1 / 3 / 2 / 5;
+		}
+
+		.ass-21 .grid .four {
+			background-image: url(images/image_4.jpg);
+			grid-area: 3 / 1 / 4 / 2;
+		}
+
+		.ass-21 .grid .five {
+			background-image: url(images/image_5.jpg);
+			grid-area: 2 / 2 / 4 / 3;
+		}
+
+		.ass-21 .grid .six {
+			background-image: url(images/image_6.jpg);
+			grid-area: 2 / 3 / 3 / 4;
+		}
+
+		.ass-21 .grid .seven {
+			background-image: url(images/image_1.jpg);
+			grid-area: 2 / 4 / 3 / 5;
+		}
+
+		.ass-21 .grid .eight {
+			background-image: url(images/image_2.jpg);
+			grid-area: 3 / 3 / 4 / 5;
+		}
+
+		.ass-24 .the-grid {
+			width: 250px;
+			height: 300px;
+			display: grid;
+			grid-template: repeat(9, 1fr) / repeat(5, 1fr);
+			gap: 5px;
+			background-color: gray;
+			justify-content: space-evenly;
+			align-content: space-evenly ;
+		}
+		.ass-24 .the-grid div::after {
+			content: counter(div-counter);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.ass-24 .the-grid div {
+			counter-increment: div-counter;
+			background-color: rgb(209, 95, 95);
+		}
+        .ass-24 .the-grid div:nth-child(1){
+			grid-area: 1 / 1 / 3 / 3;
+		}
+        .ass-24 .the-grid div:nth-child(2){
+			grid-area: 1 / 3 / 2 / 4;
+		}
+        .ass-24 .the-grid div:nth-child(3){
+			grid-area: 1 / 4 / 2 / 6;
+		}
+        .ass-24 .the-grid div:nth-child(4){
+			grid-area: 2 / 3 / 4 / 6;
+		}
+        .ass-24 .the-grid div:nth-child(5){
+			grid-area: 3 / 1 / 4 / 3;
+		}
+        .ass-24 .the-grid div:nth-child(6){
+			grid-area: 4 / 1 / 5 / 5;
+		}
+        .ass-24 .the-grid div:nth-child(7){
+			grid-area: 4 / 5 / 5 / 6;
+		}
+        .ass-24 .the-grid div:nth-child(8){
+			grid-area: 5 / 1 / 8 / 2;
+		}
+        .ass-24 .the-grid div:nth-child(9){
+			grid-area: 5 / 2 / 8 / 5;
+		}
+        .ass-24 .the-grid div:nth-child(10){
+			grid-area: 5 / 5 / 6 / 6;
+		}
+        .ass-24 .the-grid div:nth-child(11){
+			grid-area: 6 / 5 / 7 / 6;
+		}
+        .ass-24 .the-grid div:nth-child(12){
+			grid-area: 7 / 5 / 8 / 6;
+		}
+        .ass-24 .the-grid div:nth-child(13){
+			grid-area: 8 / 1 / 9 / 6;
+		}
+        .ass-24 .the-grid div:nth-child(14){
+			grid-area: 9 / 1 / 10 / 3;
+		}
+        .ass-24 .the-grid div:nth-child(15){
+			grid-area: 9 / 3 / 10 / 6;
+		}
+       
+	</style>
 </head>
+
 <body>
-				<h1>
-								assignment 16
-				</h1>
-				<table>
-  <caption>
-    Company Data
-  </caption>
-  <tfoot>
-    <tr>
-      <td colspan="3">Total</td>
-      <td>600</td>
-      <td>600</td>
-      <td>600</td>
-    </tr>
-  </tfoot>
-  <thead>
-    <tr>
-      <th>Company</th>
-      <th>Contact</th>
-      <th>Country</th>
-      <th>Revenue</th>
-      <th>Cost</th>
-      <th>Profit</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Alfreds Futterkiste</td>
-      <td>Maria Anders</td>
-      <td>Germany</td>
-      <td>100</td>
-      <td>100</td>
-      <td>100</td>
-    </tr>
-    <tr>
-      <td>Centro comercial Moctezuma</td>
-      <td>Francisco Chang</td>
-      <td>Mexico</td>
-      <td>100</td>
-      <td>100</td>
-      <td>100</td>
-    </tr>
-    <tr>
-      <td>Ernst Handel</td>
-      <td>Roland Mendel</td>
-      <td>Austria</td>
-      <td>100</td>
-      <td>100</td>
-      <td>100</td>
-    </tr>
-    <tr>
-      <td>Island Trading</td>
-      <td>Helen Bennett</td>
-      <td>UK</td>
-      <td>100</td>
-      <td>100</td>
-      <td>100</td>
-    </tr>
-    <tr>
-      <td>Laughing Bacchus Winecellars</td>
-      <td>Yoshi Tannamuri</td>
-      <td>Canada</td>
-      <td>100</td>
-      <td>100</td>
-      <td>100</td>
-    </tr>
-    <tr>
-      <td>Magazzini Alimentari Riuniti</td>
-      <td>Giovanni Rovelli</td>
-      <td>Italy</td>
-      <td>100</td>
-      <td>100</td>
-      <td>100</td>
-    </tr>
-  </tbody>
-</table>
-				<div class="ass-17">
-								<div>
-  Hello, Iam Osama Elzero From Elzero Web School. Iam In Love With Programming Specially C++, Python, JS, And Many
-  More Languages Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, maxime recusandae! Eveniet, quas
-  eius amet nostrum enim sint quis, ab perferendis voluptatibus culpa doloremque nulla harum aliquid illum?
-  Perspiciatis, veniam.
-</div>
-				</div>
-				<div class="ass-18">
-								<h2>assignment 18</h2>
-								<ul>
-  <li>Python</li>
-  <li>PHP</li>
-  <li>JavaScript</li>
-  <li>C++</li>
-  <li>C#</li>
-  <li>Java</li>
-</ul>
-				</div>
-				<div class="ass-19">
-								<h2>asdignment 19</h2>
-								<div>Elzero</div>
-				</div>
-				<div class="ass-20">
-								<h2>assignment 20</h2>
-								<h1>Elzero</h1>
-				</div>
+	<h1>
+		assignment 16
+	</h1>
+	<table>
+		<caption>
+			Company Data
+		</caption>
+		<tfoot>
+			<tr>
+				<td colspan="3">Total</td>
+				<td>600</td>
+				<td>600</td>
+				<td>600</td>
+			</tr>
+		</tfoot>
+		<thead>
+			<tr>
+				<th>Company</th>
+				<th>Contact</th>
+				<th>Country</th>
+				<th>Revenue</th>
+				<th>Cost</th>
+				<th>Profit</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Alfreds Futterkiste</td>
+				<td>Maria Anders</td>
+				<td>Germany</td>
+				<td>100</td>
+				<td>100</td>
+				<td>100</td>
+			</tr>
+			<tr>
+				<td>Centro comercial Moctezuma</td>
+				<td>Francisco Chang</td>
+				<td>Mexico</td>
+				<td>100</td>
+				<td>100</td>
+				<td>100</td>
+			</tr>
+			<tr>
+				<td>Ernst Handel</td>
+				<td>Roland Mendel</td>
+				<td>Austria</td>
+				<td>100</td>
+				<td>100</td>
+				<td>100</td>
+			</tr>
+			<tr>
+				<td>Island Trading</td>
+				<td>Helen Bennett</td>
+				<td>UK</td>
+				<td>100</td>
+				<td>100</td>
+				<td>100</td>
+			</tr>
+			<tr>
+				<td>Laughing Bacchus Winecellars</td>
+				<td>Yoshi Tannamuri</td>
+				<td>Canada</td>
+				<td>100</td>
+				<td>100</td>
+				<td>100</td>
+			</tr>
+			<tr>
+				<td>Magazzini Alimentari Riuniti</td>
+				<td>Giovanni Rovelli</td>
+				<td>Italy</td>
+				<td>100</td>
+				<td>100</td>
+				<td>100</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="ass-17">
+		<div>
+			Hello, Iam Osama Elzero From Elzero Web School. Iam In Love With Programming Specially C++, Python, JS, And
+			Many
+			More Languages Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, maxime recusandae!
+			Eveniet, quas
+			eius amet nostrum enim sint quis, ab perferendis voluptatibus culpa doloremque nulla harum aliquid illum?
+			Perspiciatis, veniam.
+		</div>
+	</div>
+	<div class="ass-18">
+		<h2>assignment 18</h2>
+		<ul>
+			<li>Python</li>
+			<li>PHP</li>
+			<li>JavaScript</li>
+			<li>C++</li>
+			<li>C#</li>
+			<li>Java</li>
+		</ul>
+	</div>
+	<div class="ass-19">
+		<h2>asdignment 19</h2>
+		<div>Elzero</div>
+	</div>
+	<div class="ass-20">
+		<h2>assignment 20</h2>
+		<h1>Elzero</h1>
+	</div>
+	<div class="ass-21">
+		<h2>assignment 21</h>
+			<div class="grid">
+				<div class="one"></div>
+				<div class="two"></div>
+				<div class="three"></div>
+				<div class="four"></div>
+				<div class="five"></div>
+				<div class="six"></div>
+				<div class="seven"></div>
+				<div class="eight"></div>
+			</div>
+	</div>
+	<div class="ass-24">
+		<h2>assignment 24</h2>
+		<div class="the-grid">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		  </div>
+	</div>
 </body>
+
 </html>
