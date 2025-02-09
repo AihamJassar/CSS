@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+				<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+				<title>Hello, World!</title>
+				<style>
+				  h2 {
+				  				height: 50px;
+				  				display: flex;
+				  				justify-content: center;
+				  				align-items: center;
+				  				background-color: #55f;
+				  				color: white;
+				  }
+				  .form {
+				  				display: flex;
+				  				justify-content: space-between;
+				  				width: 100%;
+				  } 
+				  .left {
+				  				width: 45%;
+				  				position: relative;
+				  }
+				  input[type="email"] {
+				  				margin-top: 5px;
+				  				width: 95%;
+				  				height: 25px;
+				  }
+				
+				  .password {
+				  				margin-top: 20px;
+				  } 
+				  input[type="password"] {
+				  				margin-top: 5px;
+				  				width: 95%;
+				  				height: 25px;
+				  }
+				
+				  input[type="submit"] {
+				  				margin-top: 25px;
+				  				width: 97%;
+				  				height: 30px;
+				  				background-color: #55f;
+				  				border-radius: 5px;
+				  				border-color: #55f;
+				  				color: white;
+				  }
+				  .left::after {
+				  				content: "";
+				  				width: 1px;
+				  				height: 100%;
+				  				position: absolute;
+				  				background-color: #000;
+				  				top: 0;
+				  				left: 110%;
+				  }
+				  .right {
+				  				width: 45%;
+				  				position: relative;
+				  				display: flex;
+				  				justify-content: center;
+				  				align-items: center;
+				  				flex-wrap: wrap;
+				  }
+				  .right::before {
+				  				content: "or";
+				  				width: 30px;
+				  				height: 30px;
+				  				border-radius: 50%;
+				  				position: absolute;
+				  				top: 40%;
+				  				left: -17%;
+				  				background-color: #fff;
+				  }
+				  a {
+				  				width: 95%;
+				  				height: 35px;
+				  				border-radius: 5px;
+				  				display: flex;
+				  				justify-content: center;
+				  				align-items: center;
+				  				background-color: #47f;
+				  				color: white;
+				  				text-decoration: none;
+				  } 
+				</style>
+</head>
+<body>
+				<h2>Login</h2>
+				<div class="form">
+								<div class="left">
+												<form>
+																<div class="email">
+																				<label for="email">Email</label>
+																				<br>
+																				<input type="email" id="email" name="email" size="15">
+																</div>
+																<div class="password">
+																				<label for="passwor">Password</label>
+																				<br>
+																				<input type="password" id="password" name="password" size="15">
+																				<input type="submit" value="Login">
+																</div>
+																
+												</form>
+								</div>
+								<div class="right">
+												<div class="connect">Connect</div>
+												<a href="#">Facebook</a>
+												<a href="#">Twitter</a>
+												<a href="#">Linkedin</a>
+								</div>
+				</div>
+</body>
+</html>

@@ -20,12 +20,12 @@
             margin: 20px;
         }
 
-        .money>div {
+        .money div, .projects div, .team div {
             margin: 5px;
 
         }
 
-        .money {
+        .money, .projects, .team {
             .title {
                 color: rgb(118, 118, 119);
                 font-size: 15px;
@@ -33,40 +33,71 @@
             .value {
                 font-weight:bolder;
             }
-            .line {
+        				
+          
+        }
+				       .money .line {
                 background-image: linear-gradient(to right, blue 80%, rgb(215, 215, 220) 80%);
             }
+				      .projects .line {
+                background-image: linear-gradient(to right, red 55%, rgb(215, 215, 220) 55%);
+				      }
+				      .team .line {
+                background-image: linear-gradient(to right, green 75%, rgb(215, 215, 220) 75%);
+            }
+				       .line {
+            width: 95%;
+            height: 5px;
+            position: relative;
         }
-         .money .line::after {
-            content: "80%";
+          .line::after {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 25px;
             height: 15px;
             border-radius: 5px;
-            background-color: blue;
             color: white;
             font-size: 10px;
             font-weight: bold;
             position: absolute;
-            left: 78%;
-            top: -25px;
+          				top: -25px;
          }
-         .money .line::before {
+         .line::before {
             content: "";
             width: 0;
             height: 0;
             border: 8px solid;
-            border-color: blue transparent transparent transparent;
             position: absolute;
-            left: 78.5%;
             top: -13px
          }
-        .line {
-            width: 95%;
-            height: 5px;
-            position: relative;
+        
+				      .money .line::after {
+				      				content: "80%";
+				      				background-color: blue;
+				      				left: 76%;
+				      }
+				      .projects .line::after {
+				      				content: "55%";
+				      				background-color: red;
+				      				left: 51%;
+				      }
+				      .team .line::after {
+				      				content: "75%";
+				      				background-color: green;
+				      				left: 71%;
+				      }
+        .money .line::before {
+        				border-color: blue transparent transparent transparent;
+        				left: 77.5%;
+        }
+				      .projects .line::before {
+				      				border-color: red transparent transparent transparent;
+        				left: 52.5%;
+        }
+				      .team .line::before {
+				      				border-color: green transparent transparent transparent;
+        				left: 72.5%;
         }
     </style>
 </head>
@@ -78,14 +109,14 @@
             <div class="value">$20.000</div>
             <div class="line"></div>
         </div>
-        <div class="money">
-            <div>Money</div>
-            <div>$20.000</div>
+        <div class="projects">
+            <div class="title">Projects</div>
+            <div class="value">24</div>
             <div class="line"></div>
         </div>
-        <div class="money">
-            <div>Money</div>
-            <div>$20.000</div>
+        <div class="team">
+            <div class="title">Team</div>
+            <div class="value">12</div>
             <div class="line"></div>
         </div>
 
